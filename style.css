@@ -273,6 +273,11 @@ h2 {
   line-height: 2;
 }
 
+.hero-copy > .hero-intro {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .hero-actions {
   display: flex;
   align-items: center;
