@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Alaiza Jane M. Cagas, Environmental Science graduate and MS Environmental Science student.">
+  <title>Alaiza Jane M. Cagas | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap container">
+      <a class="brand" href="#about" data-page="about" aria-label="Go to About">
+        <span class="brand-mark">AJ</span>
+        <span class="brand-text">
+          <strong>Alaiza Jane M. Cagas</strong>
+          <small>Environmental Science</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Main navigation">
+        <button class="nav-link active" data-page="about">About</button>
+        <button class="nav-link" data-page="education">Education</button>
+        <button class="nav-link" data-page="experience">Experience</button>
+        <button class="nav-link" data-page="skills">Skills</button>
+        <button class="nav-link" data-page="projects">Projects</button>
+        <button class="nav-link" data-page="contact">Contact</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content">
+
+    <!-- ABOUT -->
+    <section class="page active" id="about">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">ENVIRONMENT · RESEARCH · SUSTAINABILITY</p>
+          <p class="greeting">Hello, I'm</p>
+          <h1>
+            <span class="typewriter" data-text="Alaiza Jane"></span>
+          </h1>
+          <p class="hero-intro">
+            An aspiring environmental professional interested in turning environmental data and 
+            research into meaningful visual stories that help people better understand the world 
+            around them.
+          </p>
+          <div class="hero-actions">
+            <button class="button button-primary" data-page="projects">Explore my work <span>↗</span></button>
+            <button class="text-button" data-page="contact">Get in touch →</button>
+          </div>
+
+        </div>
+
+        <div class="hero-visual">
+          <div class="portrait-frame">
+            <img src="image/profile.jpg" alt="Portrait of Alaiza Jane Cagas">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="focus-strip">
+        <span class="strip-label">Areas of interest</span>
+        <div class="focus-tags">
+          <span>Environmental Impact Assessment</span>
+          <span>Environmental Management</span>
+          <span>GIS & Spatial Analysis</span>
+          <span>Climate Action</span>
+          <span>Community Livelihoods</span>
+        </div>
+      </div>
+
+
+      <div class="about-section">
+        <div>
+          <p class="eyebrow">A LITTLE ABOUT ME</p>
+          <h2>Science with a<br><em>purpose.</em></h2>
+        </div>
+        <div class="about-copy">
+          <p class="lead">
+            Protecting nature also means understanding the people whose lives depend on it.
+          </p>
+          <details class="about-details">
+            <summary>Read more about my background</summary>
+            <p>
+              I’m interested in finding meaningful ways to make environmental information easier to understand through 
+              research, maps, and visual storytelling. I enjoy exploring how data can reveal patterns, explain environmental changes, 
+              and show the connections between people and nature.
+            </p>
+            <p>
+              For me, visualization is more than presenting information, it is a way to turn complex ideas into something people can see,
+              understand, and use. I hope to continue developing this interest by combining environmental science, spatial analysis, and 
+              clear visual communication to support better environmental understanding and decision-making.
+            </p>
+          </details>
+        </div>
+      </div>
+
+      <div class="page-bottom">
+        <span>Get to know my journey</span>
+        <button class="text-button" data-page="education">Next: Education →</button>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="page" id="education" hidden>
+      <div class="education-list" id="educationList">
+        <div class="page-heading">
+          <p class="eyebrow">MY ACADEMIC JOURNEY</p>
+          <h1>Education & <em>learning.</em></h1>
+          <p>Choose a school or credential to explore its photos and details.</p>
+        </div>
+
+        <article class="content-card education-card">
+          <span class="card-year">GRADUATE STUDIES · 2026–PRESENT</span>
+          <h2>University of the Philippines Los Baños</h2>
+          <p class="card-subtitle">Master of Science in Environmental Science</p>
+          <button class="education-open" type="button" data-education-detail="uplb">View school photos and details <span>↗</span></button>
+        </article>
+
+        <article class="content-card education-card">
+          <span class="card-year">UNDERGRADUATE STUDIES</span>
+          <h2>Caraga State University – Main Campus</h2>
+          <p class="card-subtitle">Bachelor of Science in Environmental Science</p>
+          <p class="education-honor">Graduated <strong>Cum Laude</strong>.</p>
+          <button class="education-open" type="button" data-education-detail="caraga">View school photos and details <span>↗</span></button>
+        </article>
+
+        <article class="content-card education-card">
+          <span class="card-year">CERTIFICATES</span>
+          <h2>Professional training &amp; public service</h2>
+          <p class="card-subtitle">Civil Service Exam Passer · Basic PCO Training</p>
+          <button class="education-open" type="button" data-education-detail="certificates">View certificates <span>↗</span></button>
+        </article>
+
+        <div class="page-bottom">
+          <button class="text-button" data-page="about">← About</button>
+          <button class="text-button" data-page="experience">Next: Experience →</button>
+        </div>
+      </div>
+
+      <section class="education-detail" id="educationDetailUplb" hidden aria-labelledby="educationDetailUplbTitle">
+        <button class="text-button education-back" type="button">← Back to Education</button>
+        <div class="page-heading">
+          <p class="eyebrow">GRADUATE STUDIES · 2026–PRESENT</p>
+          <h1 id="educationDetailUplbTitle" tabindex="-1">University of the Philippines <em>Los Baños.</em></h1>
+          <p class="card-subtitle">Master of Science in Environmental Science</p>
+        </div>
+        <div class="education-gallery">
+          <figure class="education-photo-card">
+            <div class="education-photo-placeholder">Add a campus photo at <code>image/uplb.jpg</code></div>
+            <img class="education-photo" data-src="image/uplb.jpg" alt="University of the Philippines Los Baños photo 1" hidden>
+            <figcaption>UPLB photo 1</figcaption>
+          </figure>
+          <figure class="education-photo-card">
+            <div class="education-photo-placeholder">Add a campus photo at <code>image/uplb-2.jpg</code></div>
+            <img class="education-photo" data-src="image/uplb-2.jpg" alt="University of the Philippines Los Baños photo 2" hidden>
+            <figcaption>UPLB photo 2</figcaption>
+          </figure>
+          <figure class="education-photo-card">
+            <div class="education-photo-placeholder">Add a campus photo at <code>image/uplb-3.jpg</code></div>
+            <img class="education-photo" data-src="image/uplb-3.jpg" alt="University of the Philippines Los Baños photo 3" hidden>
+            <figcaption>UPLB photo 3</figcaption>
+          </figure>
+          <figure class="education-photo-card">
+            <div class="education-photo-placeholder">Add a campus photo at <code>image/uplb-4.jpg</code></div>
+            <img class="education-photo" data-src="image/uplb-4.jpg" alt="University of the Philippines Los Baños photo 4" hidden>
+            <figcaption>UPLB photo 4</figcaption>
+          </figure>
+          <figure class="education-photo-card">
+            <div class="education-photo-placeholder">Add a campus photo at <code>image/uplb-5.jpg</code></div>
+            <img class="education-photo" data-src="image/uplb-5.jpg" alt="University of the Philippines Los Baños photo 5" hidden>
+            <figcaption>UPLB photo 5</figcaption>
+          </figure>
+        </div>
+        <p class="education-detail-copy">Graduate studies focused on environmental systems, research, and the relationship between people and the environment.</p>
+      </section>
+
+      <section class="education-detail" id="educationDetailCaraga" hidden aria-labelledby="educationDetailCaragaTitle">
+        <button class="text-button education-back" type="button">← Back to Education</button>
+        <div class="page-heading">
+          <p class="eyebrow">UNDERGRADUATE STUDIES</p>
+          <h1 id="educationDetailCaragaTitle" tabindex="-1">Caraga State University <em>– Main Campus.</em></h1>
+          <p class="card-subtitle">Bachelor of Science in Environmental Science · Cum laude</p>
+        </div>
+        <div class="education-gallery">
+          <figure class="education-photo-card">
+            <div class="education-photo-placeholder">Add a campus photo at <code>image/caraga-state.jpg</code></div>
+            <img class="education-photo" data-src="image/caraga-state.jpg" alt="Caraga State University Main Campus photo 1" hidden>
+            <figcaption>Caraga State University photo 1</figcaption>
+          </figure>
+          <figure class="education-photo-card">
+            <div class="education-photo-placeholder">Add a campus photo at <code>image/caraga-state-2.jpg</code></div>
+            <img class="education-photo" data-src="image/caraga-state-2.jpg" alt="Caraga State University Main Campus photo 2" hidden>
+            <figcaption>Caraga State University photo 2</figcaption>
+          </figure>
+          <figure class="education-photo-card">
+            <div class="education-photo-placeholder">Add a campus photo at <code>image/caraga-state-3.jpg</code></div>
+            <img class="education-photo" data-src="image/caraga-state-3.jpg" alt="Caraga State University Main Campus photo 3" hidden>
+            <figcaption>Caraga State University photo 3</figcaption>
+          </figure>
+          <figure class="education-photo-card">
+            <div class="education-photo-placeholder">Add a campus photo at <code>image/caraga-state-4.jpg</code></div>
+            <img class="education-photo" data-src="image/caraga-state-4.jpg" alt="Caraga State University Main Campus photo 4" hidden>
+            <figcaption>Caraga State University photo 4</figcaption>
+          </figure>
+          <figure class="education-photo-card">
+            <div class="education-photo-placeholder">Add a campus photo at <code>image/caraga-state-5.jpg</code></div>
+            <img class="education-photo" data-src="image/caraga-state-5.jpg" alt="Caraga State University Main Campus photo 5" hidden>
+            <figcaption>Caraga State University photo 5</figcaption>
+          </figure>
+        </div>
+        <p class="education-detail-copy">Built a foundation in environmental management, environmental assessment, research, and natural resource conservation.</p>
+      </section>
+
+      <section class="education-detail" id="educationDetailCertificates" hidden aria-labelledby="educationDetailCertificatesTitle">
+        <button class="text-button education-back" type="button">← Back to Education</button>
+        <div class="page-heading">
+          <p class="eyebrow">CERTIFICATES</p>
+          <h1 id="educationDetailCertificatesTitle" tabindex="-1">Training &amp; <em>credentials.</em></h1>
+          <p>Certificates in pollution control training and public service.</p>
+        </div>
+        <div class="education-gallery education-gallery-certificates">
+          <figure class="education-photo-card">
+            <div class="education-photo-placeholder">Add your Basic PCO Training certificate at <code>image/basic-pco-training-certificate.jpg</code></div>
+            <img class="education-photo" data-src="image/basic-pco-training-certificate.jpg" alt="Basic Pollution Control Officer training certificate" hidden>
+            <figcaption>Basic Pollution Control Officer (PCO) Training</figcaption>
+          </figure>
+          <figure class="education-photo-card">
+            <div class="education-photo-placeholder">Add your Civil Service certificate at <code>image/civil-service-certificate.jpg</code></div>
+            <img class="education-photo" data-src="image/civil-service-certificate.jpg" alt="Civil Service Examination certificate" hidden>
+            <figcaption>Civil Service Examination – Passer</figcaption>
+          </figure>
+          <figure class="education-photo-card">
+            <div class="education-photo-placeholder">Add a certificate photo at <code>image/certificate-photo-3.jpg</code></div>
+            <img class="education-photo" data-src="image/certificate-photo-3.jpg" alt="Additional certificate photo 3" hidden>
+            <figcaption>Additional certificate photo 3</figcaption>
+          </figure>
+          <figure class="education-photo-card">
+            <div class="education-photo-placeholder">Add a certificate photo at <code>image/certificate-photo-4.jpg</code></div>
+            <img class="education-photo" data-src="image/certificate-photo-4.jpg" alt="Additional certificate photo 4" hidden>
+            <figcaption>Additional certificate photo 4</figcaption>
+          </figure>
+          <figure class="education-photo-card">
+            <div class="education-photo-placeholder">Add a certificate photo at <code>image/certificate-photo-5.jpg</code></div>
+            <img class="education-photo" data-src="image/certificate-photo-5.jpg" alt="Additional certificate photo 5" hidden>
+            <figcaption>Additional certificate photo 5</figcaption>
+          </figure>
+        </div>
+      </section>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="page" id="experience" hidden>
+      <div class="page-heading">
+        <p class="eyebrow">PRACTICAL EXPERIENCE</p>
+        <h1>Learning through <em>experience.</em></h1>
+        <p>Environmental compliance, field exposure, documentation, and organizational work.</p>
+      </div>
+
+      <article class="content-card">
+        <span class="card-year">PROFESSIONAL EXPERIENCE · 2025–2026</span>
+        <h2>Environmental / Pollution Control Officer</h2>
+        <p class="card-subtitle">WNC · Dinagat Islands, Philippines</p>
+        <p>Supported environmental compliance and documentation in a mining operations setting.</p>
+        <details>
+          <summary>View responsibilities</summary>
+          <ul>
+            <li>Assisted with environmental compliance reports and supporting documentation.</li>
+            <li>Helped organize environmental monitoring records and compliance information.</li>
+            <li>Engaged with environmental management and pollution-control requirements.</li>
+            <li>Gained practical exposure to the relationship between mining activities, environmental responsibilities, and local communities.</li>
+          </ul>
+        </details>
+      </article>
+
+      <article class="content-card">
+        <span class="card-year">INTERNSHIP · JUNE 2024</span>
+        <h2>Environmental Management Bureau – Region XIII</h2>
+        <p class="card-subtitle">Environmental Science Intern · Butuan City</p>
+        <p>Gained exposure to environmental monitoring, fieldwork, and regulatory processes.</p>
+        <details>
+          <summary>View internship activities</summary>
+          <ul>
+            <li>Participated in sampling and water-quality assessment activities.</li>
+            <li>Assisted with monitoring and environmental documentation.</li>
+            <li>Observed site inspection activities related to Environmental Compliance Certificate amendments.</li>
+            <li>Learned about environmental compliance, solid waste management, and hazardous waste management.</li>
+          </ul>
+        </details>
+      </article>
+
+      <article class="content-card">
+        <span class="card-year">ORGANIZATIONAL EXPERIENCE</span>
+        <h2>Caraga State University</h2>
+        <p class="card-subtitle">PAESS Assistant Executive Secretary · 2024–2025</p>
+        <p>Supported organizational communication, documentation, coordination, and administrative activities.</p>
+        <div class="card-divider"></div>
+        <p class="card-subtitle">CSU CEAS Undersecretary · 2023–2024</p>
+        <p>Gained experience in student leadership, coordination, and organizational support.</p>
+      </article>
+
+      <div class="page-bottom">
+        <button class="text-button" data-page="education">← Education</button>
+        <button class="text-button" data-page="skills">Next: Skills →</button>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="page" id="skills" hidden>
+      <div class="page-heading">
+        <p class="eyebrow">WHAT I BRING</p>
+        <h1>Knowledge & <em>skills.</em></h1>
+        <p>A growing set of environmental, technical, and professional skills developed through study, fieldwork, and work experience.</p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="content-card skills-card-featured">
+          <span class="skill-number">01</span>
+          <div class="skill-card-heading">
+            <h2>GIS &amp; Technical</h2>
+            <p>Tools and methods for spatial analysis, research, and documentation.</p>
+          </div>
+          <ul class="skill-list">
+            <li><span>GIS and QGIS</span><span class="skill-level">Basic</span></li>
+            <li><span>Spatial data interpretation</span></li>
+            <li><span>Microsoft Excel</span></li>
+            <li><span>Microsoft Word and PowerPoint</span></li>
+            <li><span>Research writing and documentation</span></li>
+          </ul>
+        </article>
+        <article class="content-card">
+          <span class="skill-number">02</span>
+          <div class="skill-card-heading">
+            <h2>Environmental</h2>
+            <p>Knowledge and experience relevant to environmental practice.</p>
+          </div>
+          <ul class="skill-list">
+            <li><span>Environmental Impact Assessment</span><span class="skill-level">Fundamentals</span></li>
+            <li><span>Environmental compliance documentation</span></li>
+            <li><span>Water-quality monitoring</span><span class="skill-level">Exposure</span></li>
+            <li><span>Solid and hazardous waste management</span></li>
+            <li><span>Environmental research</span></li>
+          </ul>
+        </article>
+        <article class="content-card">
+          <span class="skill-number">03</span>
+          <div class="skill-card-heading">
+            <h2>Professional</h2>
+            <p>Ways I contribute to collaborative and field-based work.</p>
+          </div>
+          <ul class="skill-list">
+            <li><span>Technical and administrative documentation</span></li>
+            <li><span>Team coordination</span></li>
+            <li><span>Communication and collaboration</span></li>
+            <li><span>Fieldwork support</span></li>
+            <li><span>Organization and time management</span></li>
+          </ul>
+        </article>
+      </div>
+      <p class="skills-note">Proficiency is labeled only where specified; other skills are listed without a rating.</p>
+
+      <div class="page-bottom">
+        <button class="text-button" data-page="experience">← Experience</button>
+        <button class="text-button" data-page="projects">Next: Projects →</button>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="page" id="projects" hidden>
+      <div class="page-heading">
+        <p class="eyebrow">SELECTED ACADEMIC WORK</p>
+        <h1>Research & <em>case studies</em></h1>
+        <p>Selected topics reflecting my interests in environmental systems, communities, and sustainable development.</p>
+      </div>
+
+      <div class="project-list" id="projectList">
+        <article class="project-card">
+          <div class="project-topline"><span>01 / GRADUATE RESEARCH</span><span class="project-label">Individual Research</span><span class="project-status">Ongoing</span></div>
+          <h2>Seasonal Nickel Mining, Environmental Outcomes, and Livelihoods among Coastal Communities in Tubajon, Dinagat Islands, Philippines</h2>
+          <p>Explores possible connections between seasonal mining, environmental conditions, and coastal community livelihoods.</p>
+          <button class="project-open" type="button" data-project-open="nickel" aria-controls="projectDetailNickel">View Project <span aria-hidden="true">→</span></button>
+        </article>
+
+        <article class="project-card">
+          <div class="project-topline"><span>02 / LANDSCAPE ECOLOGY</span><span class="project-label">Academic Case Study</span><span class="project-status">Ongoing</span></div>
+          <h2>Effects of Landscape Fragmentation on Floral and Faunal Diversity in Nabunturan Balik Kinaiyahan Farm</h2>
+          <p>Examines how land-cover patterns and fragmentation relate to floral and faunal diversity at the farm.</p>
+          <button class="project-open" type="button" data-project-open="fragmentation" aria-controls="projectDetailFragmentation">View Project <span aria-hidden="true">→</span></button>
+        </article>
+
+        <article class="project-card">
+          <div class="project-topline"><span>03 / WASTE MANAGEMENT</span><span class="project-label">Academic Case Study</span><span class="project-status">Ongoing</span></div>
+          <h2>Stakeholder Perceptions and Social Acceptability of a Proposed Waste-to-Energy Facility in Calauan, Laguna</h2>
+          <p>Considers how local stakeholders view potential environmental, social, economic, and governance implications.</p>
+          <button class="project-open" type="button" data-project-open="waste" aria-controls="projectDetailWaste">View Project <span aria-hidden="true">→</span></button>
+        </article>
+
+        <article class="project-card">
+          <div class="project-topline"><span>04 / BIODIVERSITY</span><span class="project-label">Academic Case Study</span><span class="project-status">Ongoing</span></div>
+          <h2>Insect Diversity and Entomotourism Potential</h2>
+          <p>Explores insect diversity and the potential for insect-focused nature tourism.</p>
+          <button class="project-open" type="button" data-project-open="insects" aria-controls="projectDetailInsects">View Project <span aria-hidden="true">→</span></button>
+        </article>
+
+        <article class="project-card">
+          <div class="project-topline"><span>05 / CASE STUDY</span><span class="project-label">Academic Case Study</span><span class="project-status project-status-development">In development</span></div>
+          <h2>Cost-Benefit Analysis Case Study</h2>
+          <p>A case study currently in development.</p>
+          <button class="project-open" type="button" data-project-open="costBenefit" aria-controls="projectDetailCostBenefit">View Project <span aria-hidden="true">→</span></button>
+        </article>
+
+        
+
+        <div class="page-bottom">
+          <button class="text-button" data-page="skills">← Skills</button>
+          <button class="text-button" data-page="contact">Next: Contact →</button>
+        </div>
+      </div>
+
+      <article class="project-detail" id="projectDetailNickel" aria-labelledby="projectTitleNickel" hidden>
+        <button class="project-back" type="button">← Back to all projects</button>
+        <div class="project-detail-heading">
+          <p class="eyebrow">GRADUATE RESEARCH</p>
+          <h2 id="projectTitleNickel" tabindex="-1">Seasonal Nickel Mining, Environmental Outcomes, and Livelihoods among Coastal Communities in Tubajon, Dinagat Islands, Philippines</h2>
+          <div class="project-detail-labels"><span class="project-label">Individual Research</span><span class="project-status project-status-development">In development</span></div>
+          <p class="project-publication-note">Publication status not provided; this entry is not presented as published research.</p>
+        </div>
+        <div class="project-detail-grid">
+          <section><h3>Overview</h3><p>Explores how seasonal mining activities may relate to environmental conditions and community livelihoods. The research direction considers livelihood sources, dependence on natural resources, community experiences, and perceived environmental and socioeconomic outcomes across selected coastal communities.</p></section>
+          <section><h3>Methods and tools</h3><p>Social-ecological systems approach. Specific methods, datasets, and software: <strong>To be added.</strong></p></section>
+          <section><h3>Key findings or outputs</h3><p>Findings, maps, charts, and recommendations: <strong>To be added when available.</strong></p></section>
+          <section><h3>My role</h3><p>Individual or group project and specific contributions: <strong>To be added.</strong></p></section>
+        </div>
+        <figure class="project-visual-placeholder"><figcaption>Space for a relevant map, chart, photograph, or diagram.</figcaption></figure>
+      </article>
+
+      <article class="project-detail" id="projectDetailFragmentation" aria-labelledby="projectTitleFragmentation" hidden>
+        <button class="project-back" type="button">← Back to all projects</button>
+        <div class="project-detail-heading">
+          <p class="eyebrow">LANDSCAPE ECOLOGY</p>
+          <h2 id="projectTitleFragmentation" tabindex="-1">Effects of Landscape Fragmentation on Floral and Faunal Diversity in Nabunturan Balik Kinaiyahan Farm</h2>
+          <div class="project-detail-labels"><span class="project-label">Academic Case Study</span><span class="project-status">Ongoing</span></div>
+          <p class="project-publication-note">Publication status not provided; this entry is not presented as published research.</p>
+        </div>
+        <div class="project-detail-grid">
+          <section><h3>Overview</h3><p>Examines land-cover patterns and landscape fragmentation, and considers how landscape structure relates to floral and faunal diversity at Nabunturan Balik Kinaiyahan Farm.</p></section>
+          <section><h3>Methods and tools</h3><p>Uses secondary spatial data and landscape metrics to characterize land-cover types and assess fragmentation patterns. Specific GIS software and datasets: <strong>To be added.</strong></p></section>
+          <section><h3>Key findings or outputs</h3><p>Specific findings, maps, charts, and recommendations: <strong>To be added.</strong></p></section>
+          <section><h3>My role</h3><p>Individual or group project and specific contributions: <strong>To be added.</strong></p></section>
+        </div>
+        <figure class="project-visual-placeholder"><figcaption>Space for a landscape map, metric chart, photograph, or diagram.</figcaption></figure>
+      </article>
+
+      <article class="project-detail" id="projectDetailWaste" aria-labelledby="projectTitleWaste" hidden>
+        <button class="project-back" type="button">← Back to all projects</button>
+        <div class="project-detail-heading">
+          <p class="eyebrow">WASTE MANAGEMENT</p>
+          <h2 id="projectTitleWaste" tabindex="-1">Stakeholder Perceptions and Social Acceptability of a Proposed Waste-to-Energy Facility in Calauan, Laguna</h2>
+          <div class="project-detail-labels"><span class="project-label">Academic Case Study</span><span class="project-status">Ongoing</span></div>
+          <p class="project-publication-note">Publication status not provided; this entry is not presented as published research.</p>
+        </div>
+        <div class="project-detail-grid">
+          <section><h3>Overview</h3><p>Explores stakeholder views on potential environmental, social, economic, and governance implications of a proposed waste-to-energy facility in Calauan, Laguna.</p></section>
+          <section><h3>Methods and tools</h3><p>The proposed approach considers household perspectives alongside insights from local government, businesses, and community groups. Methods, data collection, and tools actually used: <strong>To be added.</strong></p></section>
+          <section><h3>Key findings or outputs</h3><p>Findings, analyses, and recommendations: <strong>To be added when available.</strong></p></section>
+          <section><h3>My role</h3><p>Individual or group project and specific contributions: <strong>To be added.</strong></p></section>
+        </div>
+        <figure class="project-visual-placeholder"><figcaption>Space for a chart, stakeholder diagram, photograph, or other project output.</figcaption></figure>
+      </article>
+
+      <article class="project-detail" id="projectDetailInsects" aria-labelledby="projectTitleInsects" hidden>
+        <button class="project-back" type="button">← Back to all projects</button>
+        <div class="project-detail-heading">
+          <p class="eyebrow">BIODIVERSITY</p>
+          <h2 id="projectTitleInsects" tabindex="-1">Insect Diversity and Entomotourism Potential</h2>
+          <div class="project-detail-labels"><span class="project-label">Academic Case Study</span><span class="project-status">Ongoing</span></div>
+          <p class="project-publication-note">Publication status not provided; this entry is not presented as published research.</p>
+        </div>
+        <div class="project-detail-grid">
+          <section><h3>Overview</h3><p>Project focus beyond the title: <strong>To be added.</strong></p></section>
+          <section><h3>Methods and tools</h3><p>Methods, software, datasets, and analytical approaches: <strong>To be added.</strong></p></section>
+          <section><h3>Key findings or outputs</h3><p>Findings, species records, maps, charts, and recommendations: <strong>To be added when available.</strong></p></section>
+          <section><h3>My role</h3><p>Individual or group project and specific contributions: <strong>To be added.</strong></p></section>
+        </div>
+        <figure class="project-visual-placeholder"><figcaption>Space for insect photographs, species records, maps, or diagrams.</figcaption></figure>
+      </article>
+
+      <article class="project-detail" id="projectDetailCostBenefit" aria-labelledby="projectTitleCostBenefit" hidden>
+        <button class="project-back" type="button">← Back to all projects</button>
+        <div class="project-detail-heading">
+          <p class="eyebrow">CASE STUDY</p>
+          <h2 id="projectTitleCostBenefit" tabindex="-1">Cost-Benefit Analysis Case Study</h2>
+          <div class="project-detail-labels"><span class="project-label">Academic Case Study</span><span class="project-status project-status-development">In development</span></div>
+          <p class="project-publication-note">Publication status not provided; this entry is not presented as published research.</p>
+        </div>
+        <div class="project-detail-grid">
+          <section><h3>Overview</h3><p>Case study topic, purpose, and scope: <strong>To be added.</strong></p></section>
+          <section><h3>Methods and tools</h3><p>Methods, data, assumptions, and tools: <strong>To be added.</strong></p></section>
+          <section><h3>Key findings or outputs</h3><p>Analysis, findings, and recommendations: <strong>To be added when available.</strong></p></section>
+          <section><h3>My role</h3><p>Individual or group project and specific contributions: <strong>To be added.</strong></p></section>
+        </div>
+        <figure class="project-visual-placeholder"><figcaption>Space for a cost-benefit chart, table, or diagram.</figcaption></figure>
+      </article>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="page" id="contact" hidden>
+      <div class="contact-panel">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h1>Good work begins<br>with a <em>conversation.</em></h1>
+        <p class="hero-intro">I welcome opportunities related to environmental research, sustainability, environmental management, and collaboration.</p>
+        <a class="contact-cta" href="mailto:ajcagas32@gmail.com">Email me <span aria-hidden="true">↗</span></a>
+        <div class="contact-list">
+          <div class="contact-row">
+            <span>Email</span>
+            <a href="mailto:ajcagas32@gmail.com">ajcagas32@gmail.com</a>
+          </div>
+          <div class="contact-row">
+            <span>LinkedIn</span>
+            <a href="https://www.linkedin.com/in/alaiza-jane-c-447944306" target="_blank" rel="noopener noreferrer">linkedin.com/in/alaiza-jane-c-447944306 <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="contact-row">
+            <span>Location</span>
+            <p>Philippines</p>
+          </div>
+        </div>
+       
+      </div>
+      <div class="page-bottom">
+        <button class="text-button" data-page="projects">← Projects</button>
+        <button class="text-button" data-page="about">Back to About ↑</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="footer-brand">AJMC <small>· Environmental Science</small></span>
+      <span>Built with purpose. © <span id="year"></span> Alaiza Jane M. Cagas</span>
+    </div>
+  </footer>
+</body>
+</html>
